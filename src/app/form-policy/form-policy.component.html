@@ -22,7 +22,9 @@
   </mat-form-field>
 
   <mat-form-field>
-    <input matInput placeholder="Valor de póliza" [value]="policyType ? policyType.value : ''">
+    <input matInput placeholder="Valor de póliza" [value]="policyType ? policyType.value : ''" [disabled]="true">
   </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="onSaveData()">guardar</button>
 
 </div>

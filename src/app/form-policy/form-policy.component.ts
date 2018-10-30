@@ -28,4 +28,8 @@ export class FormPolicyComponent implements OnInit {
     });
   }
 
+  onSaveData() {
+    console.log(this.insurancePolicy, this.policyType)
+  }
+
 }

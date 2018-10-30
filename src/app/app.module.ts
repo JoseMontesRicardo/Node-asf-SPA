@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { FormPolicyComponent } from './form-policy/form-policy.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
-import { MatSelectModule } from '@angular/material';
+import { MatSelectModule, MatButtonModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -23,6 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     MatSelectModule,
     FormsModule,
+    MatButtonModule,
     ReactiveFormsModule
   ],
   providers: [],
