@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { FormPolicyComponent } from './form-policy/form-policy.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
-import { MatSelectModule, MatButtonModule } from '@angular/material';
+import { MatSelectModule, MatButtonModule, MatDialogModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ErrorDialogComponent } from './error-dialog/error-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormPolicyComponent
+    FormPolicyComponent,
+    ErrorDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -24,9 +26,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatSelectModule,
     FormsModule,
     MatButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule
   ],
   providers: [],
+  entryComponents: [ErrorDialogComponent, FormPolicyComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
